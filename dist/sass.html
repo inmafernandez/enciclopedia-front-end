@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="pec 1 html II">
+    <meta name="author" content="inma fernandez">
+  
+    <title>Sass</title>
+    <!-- Icon fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.min.3c5e5897.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/style.985d7cce.css"> 
+  
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  
+  
+  </head>
+  
+<body>
+  <!-- Navigation bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <i class="fas fa-code"></i>
+      <a class="navbar-brand" href="/index.html">  Enciclopedia<br>Front-end</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/lenguajes.html">Lenguajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/module.html">Module Bundlers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/preprocesadores.html">Preprocesadores</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead" style="background-image: url('/post-sass.4e1b1483.png')">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1>¿Qué es Sass?</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <div class="container">
+        <p class="post">Todo lo que necesitas saber sobre este preprocesador CSS: Qué es Sass, y por qué debería usarlo. Si eres nuevo en el diseño web, es posible que hayas oído el término'Sass' flotando por ahí. Si no está seguro de lo que hace Sass y si debería o no utilizarlo, estamos aquí para ayudarle con nuestra guía de Sass. En resumen, Sass es un preprocesador de CSS, que añade características especiales como variables, reglas anidadas y mezclas (a veces denominadas azúcar sintáctico) en CSS normal. El objetivo es hacer el proceso de codificación más simple y eficiente. Vamos a explorar con más detalle. </p>
+        <h2>¿Qué es un preprocesador CSS?</h2>
+        <p>Un preprocesador CSS es un lenguaje de scripting que extiende el CSS permitiendo a los desarrolladores escribir código en un solo lenguaje y luego compilarlo en CSS. Sass es quizás el preprocesador más popular, pero otros ejemplos comunes incluyen Less y Stylus.</p>
+        <p>Antes de seguir adelante, siento que es necesario hacer un anuncio rápido de servicio público: si eres nuevo en CSS, no recomiendo usar ningún preprocesador (como Sass). Lo mismo ocurre con cualquier otra extensión o marco de trabajo. Si bien es cierto que ofrecen muchas ventajas en velocidad y eficiencia, es más importante que primero entienda los conceptos básicos de CSS. Asegúrese de aprender los conceptos básicos antes de empezar a explorar los atajos.</p>
+        <h2>¿Qué es y cómo usar Sass?</h2>
+        <p>Sass (Syntactically Awesome Style Sheets) es una extensión de CSS que te permite usar cosas como variables, reglas anidadas, importaciones en línea y más. También ayuda a mantener las cosas organizadas y le permite crear hojas de estilo más rápido. Sass es compatible con todas las versiones de CSS. El único requisito para usarlo es que usted debe tener Ruby instalado. También se pide a los usuarios que sigan las Directrices de la Comunidad Sass.</p>
+        <p>En la siguiente sección, esbozaré algunos consejos básicos para el uso de Sass, utilizando ejemplos del sitio web oficial de Sass. Consulte la documentación de Sass para obtener referencias y ejemplos adicionales. Sass incluye dos opciones de sintaxis:</p>
+        <ul>
+                <li><b>SCSS (Sassy CSS):</b> Usa la extensión de archivo.scss y es totalmente compatible con la sintaxis CSS.</li>
+                <li><b>Indentado (simplemente llamado'Sass')</b>: Usa la extensión de archivo.sass y la sangría en lugar de los corchetes; no es totalmente compatible con la sintaxis CSS, pero es más rápido de escribir. </li>
+        </ul>
+        <p>Tenga en cuenta que los archivos se pueden convertir de una sintaxis a otra utilizando el comando sass-convert. Aquí puedes encontrar un sencillo video tutorial que habla sobre Sass:</p>
+
+        <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/St5B7hnMLjg" allowfullscreen=""></iframe>
+        </div>
+        <h3 class="post">Variables en Sass vs CSS</h3>
+        <p>Al igual que otros lenguajes de programación, Sass permite el uso de variables que pueden almacenar información que usted puede usar a lo largo de su hoja de estilo. Por ejemplo, puede almacenar un valor de color en una variable en la parte superior del archivo y, a continuación, utilizar esta variable al establecer el color de sus elementos. Esto le permite cambiar rápidamente sus colores sin tener que modificar cada línea por separado.</p>
+        <p>Sass:</p>
+        <p>
+                <code>
+                        $font-stack:    Helvetica, sans-serif; <br>
+                        $primary-color: #333;<br><br>
+
+                        body {<br>
+                        font: 100% $font-stack;<br>
+                        color: $primary-color;<br>
+                        }
+                 </code> 
+        </p>
+
+        <p>CSS:</p>
+        <p>
+                <code>
+                        body {<br>
+                            font: 100% Helvetica, sans-serif;<br>
+                            color: #333;<br>
+                          }
+                 </code> 
+        </p>
+    </div>
+
+  <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="/preprocesadores.html" aria-label="Previous">
+            <span aria-hidden="true">Volver a preprocesadores</span>
+          </a>
+        </li>
+      </ul>
+
+<hr>
+  <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Your Website 2019</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="/lenguajes.html">Lenguajes</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/module.html">Module bundlers</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/preprocesadores.html">Preprocesadores</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="/scripts.71c4e892.js"></script>
+    <script src="/jquery.min.70620c03.js"></script> <!-- Revisar -->
+    <script src="/bootstrap.bundle.min.b6efc4a4.js"></script> <!-- Revisar -->
+  </body>
+  </html>

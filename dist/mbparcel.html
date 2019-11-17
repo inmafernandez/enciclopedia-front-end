@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="pec 1 html II">
+    <meta name="author" content="inma fernandez">
+  
+    <title>Parcel</title>
+    <!-- Icon fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.min.3c5e5897.css" rel="stylesheet">
+
+     <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/style.985d7cce.css">
+  
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  
+  
+  </head>
+  
+<body>
+  <!-- Navigation bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <i class="fas fa-code"></i>
+      <a class="navbar-brand" href="/index.html">  Enciclopedia<br>Front-end</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/lenguajes.html">Lenguajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/module.html">Module Bundlers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/preprocesadores.html">Preprocesadores</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Full Page video Header -->
+<header class="bajo">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ILHn43wsDv0" allowfullscreen=""></iframe>
+          </div>
+    </header>
+    
+      <div class="container">
+        <h1 class="post">Parcel, mucho más sencillo que webpack</h1>
+        <p>Parcel es un empaquetador de aplicaciones Web. Está en la misma categoría de herramientas de webpack, con una propuesta de valor diferente. Parcel promete hacer muchas cosas sin ninguna configuración, y ser rápido también. Sus principales características incluyen:</p>
+        <ul>
+            <li>la agrupación de activos (JS, CSS, HTML, imágenes)</li>
+            <li>transformaciones automáticas usando Babel, PostCSS y PostHTML</li>
+            <li>cero división de código de configuración</li>
+            <li>sustitución de módulos en caliente</li>
+            <li>almacenamiento en caché y procesamiento paralelo para una construcción más rápida</li>
+        </ul>
+        <p>Parcel promete hacer todo esto sin ninguna configuración, y ser rápido también.</p>
+        <p>Parcel es un empaquetador de aplicaciones web, que se diferencia por la experiencia ofrecida a los desarrolladores. Ofrece un rendimiento ultra-rápido, utilizando procesamiento multinúcleo, y no requiere configuración.</p>
+        <h2>¿Cómo instalar Parcel con npm?</h2>
+        <p>Primero instala Parcel utilizando npm:</p>
+        <p>
+           <code>
+            npm install -g parcel-bundler
+            </code> 
+        </p>
+        <p>Crea un archivo package.json en el directorio de su proyecto, usando:</p>
+        <p>
+                <code>
+                        npm init -y
+                 </code> 
+        </p>
+        <p>Parcel puede utilizar cualquier tipo de archivo como punto de entrada, pero un archivo HTML o JavaScript es un buen lugar para comenzar. Si enlazas tu archivo JavaScript principal en el HTML usando rutas relativas, entonces Parcel lo procesará por ti, y reemplazará la referencia con una URL al archivo de salida.</p>
+        <p>A continuación, crea los archivos index.html y index.js.</p>
+
+        <p>
+    
+                <code>
+                        &lt;html&gt; <br>
+                        &lt;body&gt;<br>
+                        &lt;script src="./index.js"&gt;&lt;/script&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                 </code> 
+        </p>
+
+        <p>
+                <code>
+                        console.log('hola mundo')
+                 </code> 
+        </p>
+        <p>Parcel tiene un servidor de desarrollo embebido, el cual automáticamente reconstruye su aplicación cuando realiza cambios en los archivos, y soporta reemplazo de módulos en caliente para desarrollar rápidamente. Solo debes indicar el archivo de entrada:</p>
+        <p>
+                <code>
+                        parcel index.html
+                 </code> 
+        </p>
+        <p>Ahora, abre http://localhost:1234/ en su navegador. También puedes reemplazar el puerto por defecto usando la opción -p  &lt;port number&gt;.</p>
+        <p>Utiliza el servidor de desarrollo cuando no tengas tu propio servidor, o tu aplicación sea completamente renderizada en el lado del cliente. Si cuentas con tu propio servidor, puedes ejecutar Parcel en modo watch. Este modo seguirá reconstruyendo la aplicación automáticamente cuando hagas cambios en tus archivos y seguirá soportando reemplazo de módulos en caliente, pero no iniciará un servidor web.</p>
+        <p>
+                <code>
+                        parcel watch index.html
+                 </code> 
+        </p>
+        <p>Cuando estes listo para construir tu aplicación para producción, el modo build deshabilita el modo watch y solo construye la aplicación una vez. Ve la sección Producción para más detalles.</p>
+        <p>Aquí tienes un video tutorial para seguir la instalación de Parcel paso a paso:</p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Dv9EVK6BenI" allowfullscreen=""></iframe>
+        </div>
+        
+         <br>
+         <br>
+
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="/module.html" aria-label="Previous">
+                <span aria-hidden="true">Volver module bundlers</span>
+              </a>
+            </li>
+          </ul>
+    </div>
+    <hr>
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <span class="copyright">Copyright &copy; Your Website 2019</span>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline quicklinks">
+                <li class="list-inline-item">
+                  <a href="/lenguajes.html">Lenguajes</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="/module.html">Module bundlers</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="/preprocesadores.html">Preprocesadores</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+        <!-- Bootstrap core JavaScript -->
+        <script src="/scripts.71c4e892.js"></script>
+        <script src="/jquery.min.70620c03.js"></script> <!-- Revisar -->
+        <script src="/bootstrap.bundle.min.b6efc4a4.js"></script> <!-- Revisar -->
+      </body>
+      </html>
+
+
+         

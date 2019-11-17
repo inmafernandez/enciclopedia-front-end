@@ -1,7 +1,347 @@
 body {
+  font-family: 'Lato';
+}
+
+h1 {
+  font-family: 'Lato';
+  font-size: 80px; 
+  text-transform: uppercase;
+}
+
+h2, 
+h3 {
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+}
+
+.titulo-resumen{
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+  font-size: 45px; 
+}
+
+
+
+/*Fontawesome*/
+
+.fas {
+  font-size: 50px;
+  color:#881DF2;
+  padding-right: 15px;
+}
+
+/*Breadcrumbs*/
+.breadcrumb {
+  background: #25C7D9; 
+  border: 0px solid rgba(245, 245, 245, 1); 
+  border-radius: 4px; 
+  display: block;
+  font-size: 20px;
+  font-family: 'Lato';
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.breadcrumb li {
+  font-size: 14px;
+  display: inline-block;
+}
+.breadcrumb a {
+  color: rgba(250, 250, 250, 1);
+}
+.breadcrumb a:hover {
+  color: white;
+}
+.breadcrumb>.active {
+  color: white;
+}
+.breadcrumb>li+li:before {
+  color:white; 
+  content: "\276F\00a0";
+}
+
+
+/*Navigation bar*/
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(72, 120, 217, 0.9);
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+
+/*header background*/
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background: linear-gradient(0deg, #05F2AF 0%, #25C7D9 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: linear-gradient(0deg, #25C7D9 0%, #05F2AF 100%);
+}
+
+header.masthead .bg-circle-1 {
+  height: 50rem;
+  width: 50rem;
+  top: -5rem;
+  left: -30rem;
+}
+
+header.masthead .bg-circle-2 {
+  height: 45rem;
+  width: 45rem;
+  top: -25rem;
+  right: 1rem;
+}
+
+header.masthead .bg-circle-3 {
+  height: 30rem;
+  width: 30rem;
+  bottom: -5rem;
+  right: -10%;
+}
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 45%;
+}
+header.masthead .bg-circle-5 {
+  height: 20rem;
+  width: 20rem;
+  bottom: 2rem;
+  right: 25%;
+}
+header.masthead .bg-circle-6 {
+  height: 20rem;
+  width: 20rem;
+  bottom: 1rem;
+  right: 65%;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+
+/*header carousel*/
+.carousel-item {
   height: 100vh;
-  color: #1f1f1f;
-  background: linear-gradient(to bottom, #8E42EA, #c0ffee);
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel{
+  margin-bottom: 50px;
+}
+
+/*---------------------------header post img------------------------*/
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white;
+}
+
+/*---------------------------post text ------------------------*/
+
+.post {
+  padding-top: 30px;
+}
+
+/*---------------------------post blockquote------------------------*/
+
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+  padding-top: 50px;
+ 
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+
+/*---------------------------pie de img------------------------*/
+
+.pie {
+  margin-top: 10px;
+  background-color:#C0C0C0;
+}
+.pie p {
+  text-align: right;
+  padding-right: 20px;
+  color: white;
+}
+
+/*---------------------------bajar el video del header------------------------*/
+
+.bajo {
+  margin-top: 100px;
+}
+
+/*---------------------------formato para código en html------------------------*/
+code {
+  background-color: #eee;
+  display: block;
+  padding:20px;
+}
+
+
+
+
+
+
+/*call to action*/
+.bg-primary {
+  background-color: #881DF2;
+}
+
+.btn-primary {
+  background-color: #881DF2;
+  border-color: #881DF2;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #4878D9;
+  border-color: #4878D9;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 120, 217, 0.7);
+}
+
+.btn-secondary {
+  background-color: #25C7D9;
+  border-color: #25C7D9;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #05F2C7;
+  border-color: #05F2C7;
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(37, 199, 217, 0.5);
+}
+
+
+/*footer*/
+
+.footer {
+  padding: 25px 0;
+  text-align: center;
+  background-color: #4878D9;
+  font-family: 'Lato';
+  color:white;
+}
+
+.footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+}
+
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+  color: #4878D9;
+  border-radius: 100%;
+  outline: none;
+  background-color: white;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #4878D9;
+  color: white;
+}
+
+ul.quicklinks li a {
+color: white;
+font-family: 'Lato';
+
 }
 
 
