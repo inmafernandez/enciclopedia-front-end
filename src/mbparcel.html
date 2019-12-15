@@ -50,15 +50,47 @@
   </nav>
 
   <!-- Full Page video Header -->
-<header class="bajo">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ILHn43wsDv0" allowfullscreen></iframe>
-          </div>
-    </header>
+ <!-- Full Page Image Header with Vertically Centered Content -->
+ <header>
+  <div class="carousel-inner" role="listbox">
+    <!-- Slide One - Set the background image for this slide in the line below -->
+    <div  class="carousel-item active  h-100">
+
+  <picture>            
+    <source media="(max-width: 414px)"
+            srcset="./assets/img/detalle/parcel_414.jpg">
+    
+   <source media="(max-width: 740px)"
+            srcset="./assets/img/detalle/parcel_812.jpg">
+  
+    <source media="(max-width: 768px)"
+            srcset="./assets/img/detalle/parcel_768.jpg">
+  
+    <source media="(max-width: 900px)"
+            srcset="./assets/img/detalle/parcel_896.jpg">
+    
+    <source media="(max-width: 1204px)"
+            srcset="./assets/img/detalle/parcel_1204.jpg">
+
+    <source media="(max-width: 1500px)"
+            srcset="./assets/img/detalle/parcel_1262.jpg">
+
+    <source media="(max-width: 1905px)"
+            srcset="./assets/img/detalle/parcel_1905.jpg">
+  
+    <img src="./assets/img/detalle/parcel_1905.jpg"
+            alt="logo parcel">
+  </picture>
+
+    <div class="carousel-caption d-md-block">
+      <h1 class="display-4">¿Qué es Parcel?</h1>
+    </div>
+  </div>
+</div>
+</header>
     
       <div class="container">
-        <h1 class="post">Parcel, mucho más sencillo que webpack</h1>
-        <p>Parcel es un empaquetador de aplicaciones Web. Está en la misma categoría de herramientas de webpack, con una propuesta de valor diferente. Parcel promete hacer muchas cosas sin ninguna configuración, y ser rápido también. Sus principales características incluyen:</p>
+        <p class="post">Parcel es un empaquetador de aplicaciones Web. Está en la misma categoría de herramientas de webpack, con una propuesta de valor diferente. Parcel promete hacer muchas cosas sin ninguna configuración, y ser rápido también. Sus principales características incluyen:</p>
         <ul>
             <li>la agrupación de activos (JS, CSS, HTML, imágenes)</li>
             <li>transformaciones automáticas usando Babel, PostCSS y PostHTML</li>
@@ -66,8 +98,53 @@
             <li>sustitución de módulos en caliente</li>
             <li>almacenamiento en caché y procesamiento paralelo para una construcción más rápida</li>
         </ul>
-        <p>Parcel promete hacer todo esto sin ninguna configuración, y ser rápido también.</p>
+        <p>Parcel promete hacer todo esto sin ninguna configuración, y ser rápido también. Atrás quedan los tiempos de Grunt o Gulp. El mundo de los bundlers actualmente se encuentra indiscutiblemente dominado por Webpack, que muy recientemente ha alcanzado su versión 4 con notables mejoras en el rendimiento y reducción de su extensa configuración. La irrupción de Parcel puede hacer que esta hegemonía, pueda estar tocando a su fin.</p>
+        <picture class="img-fluid rounded mb-3 mb-md-0" >            
+          <source media="(max-width: 414px)"
+                  srcset="./assets/img/detalle/parcel_box_330.png">
+        
+          <source media="(max-width: 740px)"
+                  srcset="./assets/img/detalle/parcel_box_510.png">
+        
+          <source media="(max-width: 900px)"
+                  srcset="./assets/img/detalle/parcel_box_690.png">
+          
+          <source media="(max-width: 1024px)"
+                  srcset="./assets/img/detalle/parcel_box_930.png">
+    
+          <source media="(max-width: 1900px)"
+                  srcset="./assets/img/detalle/parcel_box_1110.png">
+        
+          <img src="./assets/img/detalle/parcel_box_1110.png"
+                  alt="parcel box">
+        </picture>
+        <figcaption class="figure-caption">Logo de Parcel.</figcaption>
         <p>Parcel es un empaquetador de aplicaciones web, que se diferencia por la experiencia ofrecida a los desarrolladores. Ofrece un rendimiento ultra-rápido, utilizando procesamiento multinúcleo, y no requiere configuración.</p>
+        <p>El slogan de Parcel es "Empaquetador de aplicaciones web ultra-rápido, sin configuración", así que a lo largo de este post vamos a comprobar si realmente esto es así probando a empaquetar un proyecto Vue con Parcel y haciendo uso de los elementos habituales de cualquier proyecto: Servidor de desarrollo, build de producción, code splitting etc. Todo el código está disponible en github. Arrancamos.</p>
+        <p>Parcel viene con un servidor de desarrollo muy similar al webpack-dev-server de Webpack. Este servidor de desarrollo viene ya con HMR (Hot module replacement) y no se requiere ningún tipo de configuración adicional para ser usado. Vamos a crear un punto de entrada para arrancar el servidor, siendo en este caso un archivo .html, a diferencia de lo que solemos usar en Webpack</p>
+        <p>Bien pues ya tenemos nuestro server de desarrollo arriba, sin embargo, vemos algunos errores en la consola, pero no tiene nada que ver con ParcelJs. Esto se debe a que tenemos que configurar babel, así que vamos a instalar las dependencias necesarias, entre ellas el plugin para eslint y el plugin para babel-plugin-syntax-dynamic-import o babel-plugin-dynamic-import-node que nos permitiran realizar lazy loading/code spliting</p>
+        <picture class="img-fluid rounded mb-3 mb-md-0" >            
+          <source media="(max-width: 414px)"
+                  srcset="./assets/img/detalle/parcel_art_direction_330.jpg">
+        
+          <source media="(max-width: 740px)"
+                  srcset="./assets/img/detalle/parcel_art_direction_510.jpg">
+        
+          <source media="(max-width: 900px)"
+                  srcset="./assets/img/detalle/parcel_art_direction_690.jpg">
+          
+          <source media="(max-width: 1024px)"
+                  srcset="./assets/img/detalle/parcel_art_direction_930.jpg">
+    
+          <source media="(max-width: 1900px)"
+                  srcset="./assets/img/detalle/parcel_art_direction_1110.jpg">
+        
+          <img src="./assets/img/detalle/parcel_art_direction_1110.jpg"
+                  alt="parcel code">
+        </picture>
+        <figcaption class="figure-caption">Workshop sobre Parcel.</figcaption>
+        <p>Para configurar babel tenemos que añadir el archivo. babelrc en la carpeta raíz y de nuestro proyecto y añadir la configuración básica que nos permita empaquetar nuestra aplicación (en este caso Vue). La configuración es muy sencilla, aunque lógicamente aquí podemos añadir todos los presets y plugins que vayamos a necesitar, pero por el momento solo necesitamos babel-preset-env que nos habilita a la compilación de ES2015 con sus respectivos polyfills y los plugins necesarios</p>
+        <p>No podemos evaluar un bundler de hoy en día sin evaluar estas características, fundamentales en cualquier proyecto de hoy en día. Parcel nos permite, haciendo uso de la propuesta del TC39 dynamic-imports la carga asíncrona y bajo demanda de ciertos módulos, de tal forma que no tenemos que cargar la totalidad del código Js de nuestra app si no accedemos a una determinada ruta, sección o container (contenedor de otros componentes). Para ello haremos uso del paquete babel-plugin-dynamic-import-node que instalamos al inicio y añadimos al fichero.</p>
         <h2>¿Cómo instalar Parcel con npm?</h2>
         <p>Primero instala Parcel utilizando npm:</p>
         <p>

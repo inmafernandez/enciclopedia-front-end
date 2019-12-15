@@ -7,7 +7,7 @@
     <meta name="description" content="pec 1 html II">
     <meta name="author" content="inma fernandez">
   
-    <title>Enciclopedia front-end</title>
+    <title>ENCICLOPEDIA FRONT-END</title>
     <!-- Icon fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   
@@ -20,6 +20,9 @@
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
   
   </head>
   
@@ -66,6 +69,9 @@
     <div class="bg-circle-4 bg-circle"></div>
     <div class="bg-circle-5 bg-circle"></div>
     <div class="bg-circle-6 bg-circle"></div>
+    <div class="bg-circle-7 bg-circle"></div>
+    <div class="bg-circle-8 bg-circle"></div>
+    <div class="bg-circle-9 bg-circle"></div>
   </header>
 
   <section>
@@ -74,7 +80,28 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="./assets/img/HTML5.jpg" alt="">
+            <picture class="img-fluid rounded-circle" >            
+              <source media="(max-width: 375px)"
+                      srcset="./assets/img/portada/HTML5_251.jpg">
+            
+              <source media="(max-width: 740px)"
+                      srcset="./assets/img/portada/HTML5_414.jpg">
+            
+              <source media="(max-width: 812px)"
+                      srcset="./assets/img/portada/HTML5_594.jpg">
+              
+              <source media="(max-width: 1024px)"
+                      srcset="./assets/img/portada/HTML5_354.jpg">
+
+              <source media="(max-width: 1900px)"
+                      srcset="./assets/img/portada/HTML5_444.jpg">
+            
+              <img src="./assets/img/portada/HTML5_444.jpg"
+                      alt="logo html5, css3 y js 6">
+            </picture>
+
+
+
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
@@ -93,7 +120,25 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="./assets/img/parcel-og.png" alt="">
+            <picture class="img-fluid rounded-circle" >            
+              <source media="(max-width: 375px)"
+                      srcset="./assets/img/portada/parcel_251.jpg">
+            
+              <source media="(max-width: 740px)"
+                      srcset="./assets/img/portada/parcel_414.jpg">
+            
+              <source media="(max-width: 812px)"
+                      srcset="./assets/img/portada/parcel_594.jpg">
+              
+              <source media="(max-width: 1024px)"
+                      srcset="./assets/img/portada/parcel_354.jpg">
+
+              <source media="(max-width: 1900px)"
+                      srcset="./assets/img/portada/parcel_444.jpg">
+            
+              <img src="./assets/img/portada/parcel_444.jpg"
+                      alt="logo parcel">
+            </picture>
           </div>
         </div>
         <div class="col-lg-6">
@@ -111,7 +156,25 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
-            <img class="img-fluid rounded-circle" src="./assets/img/sass-logo.png" alt="">
+            <picture class="img-fluid rounded-circle" >            
+              <source media="(max-width: 375px)"
+                      srcset="./assets/img/portada/sass_251.jpg">
+            
+              <source media="(max-width: 740px)"
+                      srcset="./assets/img/portada/sass_414.jpg">
+            
+              <source media="(max-width: 812px)"
+                      srcset="./assets/img/portada/sass_594.jpg">
+              
+              <source media="(max-width: 1024px)"
+                      srcset="./assets/img/portada/sass_354.jpg">
+
+              <source media="(max-width: 1900px)"
+                      srcset="./assets/img/portada/sass_444.jpg">
+            
+              <img src="./assets/img/portada/sass_444.jpg"
+                      alt="logo parcel">
+            </picture>
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
@@ -128,9 +191,7 @@
 <footer class="footer">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-4">
-        <span class="copyright">Copyright &copy; Your Website 2019</span>
-      </div>
+      
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
           <li class="list-inline-item">
@@ -155,6 +216,13 @@
           </li>
         </ul>
       </div>
+
+      <div class="col-md-4">
+          <i class="fas fa-code"></i>
+           <a class="text-footer navbar-brand" href="./index.html">  Enciclopedia <br>Front-end</a> <br>
+           <span class="copyright">Copyright &copy; Your Website 2019</span>
+     </div>
+
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">

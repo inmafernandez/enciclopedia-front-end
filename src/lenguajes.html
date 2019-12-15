@@ -48,63 +48,88 @@
       </div>
     </div>
   </nav>
-  <!-- carousel-->
-  <header class="carousel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active"  style="background-image: url('./assets/img/html5-banner.png')">
-          <div class="carousel-caption d-md-block">
-            <h2 class="display-4">HTML 5</h2>
-            <p class="lead">Define las propiedades y comportamientos de la web</p>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./assets/img/css3-banner.png')">
-          <div class="carousel-caption d-md-block">
-            <h2 class="display-4">CSS 3</h2>
-            <p class="lead">Hojas de estilo utilizadas para describir documento en HTML</p>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./assets/img/js6-banner.png')">
-          <div class="carousel-caption d-md-block">
-            <h2 class="display-4">JS 6</h2>
-            <p class="lead">Puede actualizar y cambiar tanto HTML como CSS.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-    </div>
-  </header>
+
   
-  <!-- sections-->
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header>
+  <div class="carousel-inner" role="listbox">
+    <!-- Slide One - Set the background image for this slide in the line below -->
+    <div  class="carousel-item active  h-100">
+
+  <picture>            
+    <source media="(max-width: 414px)"
+            srcset="./assets/img/categoria/hcj_414.jpg">
+    
+   <source media="(max-width: 742px)"
+            srcset="./assets/img/categoria/hcj_812.jpg">
+  
+    <source media="(max-width: 768px)"
+            srcset="./assets/img/categoria/hcj_768.jpg">
+  
+    <source media="(max-width: 900px)"
+            srcset="./assets/img/categoria/hcj_896.jpg">
+    
+    <source media="(max-width: 1204px)"
+            srcset="./assets/img/categoria/hcj_1204.jpg">
+
+    <source media="(max-width: 1500px)"
+            srcset="./assets/img/categoria/hcj_1262.jpg">
+
+    <source media="(max-width: 1905px)"
+            srcset="./assets/img/categoria/hcj_1905.jpg">
+  
+    <img src="./assets/img/categoria/hcj_1905.jpg"
+            alt="logo html, css y js">
+  </picture>
+
+    <div class="carousel-caption d-md-block">
+      <h2 class="display-4">Lenguajes</h2>
+      <p class="lead">HTML, CSS y JavaScript</p>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+
+
+<!-- sections-->
 <!-- Page Content -->
 <div class="container">
 
-
-    <ul class="breadcrumb">
-        <li><a href="./index.html">Home</a></li>
-        <li class="active">Lenguajes</li>
-    </ul>
-
+  <ul class="breadcrumb">
+    <li><a href="./index.html">Home</a></li>
+    <li class="active">Lenguajes</li>
+  </ul>
+  
   <!-- Project One -->
   <div class="row">
     <div class="col-md-7">
       <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="./assets/img/html5-banner.png" alt="">
+              
+        <picture class="img-fluid rounded mb-3 mb-md-0" >            
+          <source media="(max-width: 414px)"
+                  srcset="./assets/img/articulos/html_330.jpg">
+        
+          <source media="(max-width: 740px)"
+                  srcset="./assets/img/articulos/html_510.jpg">
+        
+          <source media="(max-width: 900px)"
+                  srcset="./assets/img/articulos/html_390.jpg">
+          
+          <source media="(max-width: 1024px)"
+                  srcset="./assets/img/articulos/html_530.jpg">
+
+          <source media="(max-width: 1900px)"
+                  srcset="./assets/img/articulos/html_635.jpg">
+        
+          <img src="./assets/img/articulos/html_635.jpg"
+                  alt="logo html5">
+        </picture>
+        
       </a>
     </div>
     <div class="col-md-5">
@@ -121,7 +146,25 @@
   <div class="row">
     <div class="col-md-7">
       <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="./assets/img/css3-banner.png" alt="">
+        <picture class="img-fluid rounded mb-3 mb-md-0" >            
+          <source media="(max-width: 414px)"
+                  srcset="./assets/img/articulos/css_330.jpg">
+        
+          <source media="(max-width: 740px)"
+                  srcset="./assets/img/articulos/css_510.jpg">
+        
+          <source media="(max-width: 900px)"
+                  srcset="./assets/img/articulos/css_390.jpg">
+          
+          <source media="(max-width: 1024px)"
+                  srcset="./assets/img/articulos/css_530.jpg">
+
+          <source media="(max-width: 1900px)"
+                  srcset="./assets/img/articulos/css_635.jpg">
+        
+          <img src="./assets/img/articulos/css_635.jpg"
+                  alt="logo css3">
+        </picture>
       </a>
     </div>
     <div class="col-md-5">
@@ -138,7 +181,25 @@
   <div class="row">
     <div class="col-md-7">
       <a href="#">
-        <img class="img-fluid rounded mb-3 mb-md-0" src="./assets/img/js6-banner.png" alt="">
+        <picture class="img-fluid rounded mb-3 mb-md-0" >            
+          <source media="(max-width: 414px)"
+                  srcset="./assets/img/articulos/js_330.jpg">
+        
+          <source media="(max-width: 740px)"
+                  srcset="./assets/img/articulos/js_510.jpg">
+        
+          <source media="(max-width: 900px)"
+                  srcset="./assets/img/articulos/js_390.jpg">
+          
+          <source media="(max-width: 1024px)"
+                  srcset="./assets/img/articulos/js_530.jpg">
+
+          <source media="(max-width: 1900px)"
+                  srcset="./assets/img/articulos/js_635.jpg">
+        
+          <img src="./assets/img/articulos/js_635.jpg"
+                  alt="logo javascript">
+        </picture>
       </a>
     </div>
     <div class="col-md-5">
