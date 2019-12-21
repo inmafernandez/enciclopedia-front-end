@@ -9,7 +9,7 @@
   
     <title>Parcel</title>
     <!-- Icon fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/fontawesome-free/css/all.css"> 
   
     <!-- Bootstrap core CSS -->
     <link href="./assets/styles/bootstrap.min.css" rel="stylesheet">
@@ -17,9 +17,12 @@
      <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
   
-    <!-- Custom fonts for this template -->
+     <!-- Custom fonts for this template 
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    -->
+   
+  
   
   
   </head>
@@ -118,7 +121,6 @@
           <img src="./assets/img/detalle/parcel_box_1110.png"
                   alt="parcel box">
         </picture>
-        <figcaption class="figure-caption">Logo de Parcel.</figcaption>
         <p>Parcel es un empaquetador de aplicaciones web, que se diferencia por la experiencia ofrecida a los desarrolladores. Ofrece un rendimiento ultra-rápido, utilizando procesamiento multinúcleo, y no requiere configuración.</p>
         <p>El slogan de Parcel es "Empaquetador de aplicaciones web ultra-rápido, sin configuración", así que a lo largo de este post vamos a comprobar si realmente esto es así probando a empaquetar un proyecto Vue con Parcel y haciendo uso de los elementos habituales de cualquier proyecto: Servidor de desarrollo, build de producción, code splitting etc. Todo el código está disponible en github. Arrancamos.</p>
         <p>Parcel viene con un servidor de desarrollo muy similar al webpack-dev-server de Webpack. Este servidor de desarrollo viene ya con HMR (Hot module replacement) y no se requiere ningún tipo de configuración adicional para ser usado. Vamos a crear un punto de entrada para arrancar el servidor, siendo en este caso un archivo .html, a diferencia de lo que solemos usar en Webpack</p>
@@ -142,7 +144,6 @@
           <img src="./assets/img/detalle/parcel_art_direction_1110.jpg"
                   alt="parcel code">
         </picture>
-        <figcaption class="figure-caption">Workshop sobre Parcel.</figcaption>
         <p>Para configurar babel tenemos que añadir el archivo. babelrc en la carpeta raíz y de nuestro proyecto y añadir la configuración básica que nos permita empaquetar nuestra aplicación (en este caso Vue). La configuración es muy sencilla, aunque lógicamente aquí podemos añadir todos los presets y plugins que vayamos a necesitar, pero por el momento solo necesitamos babel-preset-env que nos habilita a la compilación de ES2015 con sus respectivos polyfills y los plugins necesarios</p>
         <p>No podemos evaluar un bundler de hoy en día sin evaluar estas características, fundamentales en cualquier proyecto de hoy en día. Parcel nos permite, haciendo uso de la propuesta del TC39 dynamic-imports la carga asíncrona y bajo demanda de ciertos módulos, de tal forma que no tenemos que cargar la totalidad del código Js de nuestra app si no accedemos a una determinada ruta, sección o container (contenedor de otros componentes). Para ello haremos uso del paquete babel-plugin-dynamic-import-node que instalamos al inicio y añadimos al fichero.</p>
         <h2>¿Cómo instalar Parcel con npm?</h2>

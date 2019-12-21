@@ -1,3 +1,5 @@
+import "@fortawesome/fontawesome-free/css/all.css"
+
 var i = 0;
 var i=0;
 var txt = 'Hola, bienvenido a enciclopedia font-end';
